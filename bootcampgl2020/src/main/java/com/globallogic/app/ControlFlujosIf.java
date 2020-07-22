@@ -24,11 +24,27 @@ public class ControlFlujosIf {
 		
 		char letra1 = 'A';
 		char letra2 = 'b';
-		if(Character.isUpperCase(letra1)) {
-			
+		if(Character.isUpperCase(letra2)) {
+			System.out.println("Es una letra mayúscula");
+		}else {
+			System.out.println("Es una letra minúscula");
 		}
 	
+		//Ejercicio 4.3
 		
+		double compra = 400;
+		double descuento;
+		if(compra==300) {
+			descuento = compra*0.20;	
+		System.out.println("El descuento es de: " + descuento);
+		}else {
+			if(compra >350) {
+				descuento = compra*0.25;
+				System.out.println("El descuento es de: " + descuento);
+			}else {
+				System.out.println("Sin descuentos, el total es de: " + compra);
+			}
+		}
 		
 
 	}
