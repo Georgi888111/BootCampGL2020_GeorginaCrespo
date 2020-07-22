@@ -33,6 +33,14 @@ public class ControlFlujosForeach {
 		for (String dia : dias) {
 			System.out.println("Dia de la semana: " + dia);
 		}
+		
+		//Ejercicio 4.11
+		
+		//String palabra = "BootCamp 2020";
+		
+		//for (Char letra : palabra) {
+			
+		//}
 	}
 	
 
