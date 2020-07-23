@@ -1,6 +1,6 @@
 package com.globallogic.app;
 
-abstract class Automovil {
+public abstract class Automovil {
 
     abstract void retoceder();
 

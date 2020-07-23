@@ -43,6 +43,11 @@ public class Ejercicio5 {
 		gato.setPatas(4);
 		System.out.println("Mi gato se llama " + gato.getNombre() + " y tiene " + gato.getPatas());
 		
+		
+		//Ejercicio 5.4
+		
+		Berlina ber = new Berlina();
+	    ber.avanzar();
 	}
 	 
 

@@ -4,8 +4,12 @@ public class Berlina extends Automovil {
 
 	@Override
 	void retoceder() {
-		// TODO Auto-generated method stub
 		
+		
+	}
+	
+	void avanzar() {
+		System.out.println("Soy el automovil Berlina");
 	}
 
 }
