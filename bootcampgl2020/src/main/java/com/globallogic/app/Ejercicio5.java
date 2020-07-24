@@ -48,6 +48,7 @@ public class Ejercicio5 {
 		
 		Berlina ber = new Berlina();
 	    ber.avanzar();
+	    ber.retoceder();
 	}
 	 
 

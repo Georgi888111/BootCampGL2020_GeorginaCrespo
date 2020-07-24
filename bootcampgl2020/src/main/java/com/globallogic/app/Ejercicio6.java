@@ -1,6 +1,7 @@
 package com.globallogic.app;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Ejercicio6 {
@@ -52,9 +53,65 @@ public class Ejercicio6 {
 
 		for (EmpleadoDos empleadoDos : empleados) {
 			empleadoDos.calculoRetenciones();
-			System.out.println(empleadoDos.toString());
-			System.out.println("-----------------");
+			
 		}
+		
+		EmpleadoDos mayorSueldo = empleados.get(0);
+		for (EmpleadoDos empleadoDos : empleados) {
+		if(empleadoDos.getSueldoBase()>mayorSueldo.getSueldoBase()) {
+			mayorSueldo = empleadoDos;
+		}
+			
+		}
+		
+		System.out.println("El empleado con mayor sueldo es: "   );
+		System.out.println(mayorSueldo.toString());
+		
+		EmpleadoDos menorSueldo = empleados.get(0);
+		for (EmpleadoDos empleadoDos : empleados) {
+		if(empleadoDos.getSueldoBase()<menorSueldo.getSueldoBase()) {
+			menorSueldo = empleadoDos;
+		}
+			
+		}
+		
+		System.out.println("El empleado con menor sueldo es: "   );
+		System.out.println(menorSueldo.toString());
+		
+		System.out.println("Empleados ordenados por salario");
+		Collections.sort(empleados);
+		for (EmpleadoDos empleadoDos : empleados) {
+			System.out.println(empleadoDos.toString());
+			System.out.println("-----------------------");
+		}
+	
+		EmpleadoDos mayorHorasExtras = empleados.get(0);
+		
+		for (EmpleadoDos empleadoDos : empleados) {
+			if(empleadoDos.complementoHorasExtras()>mayorHorasExtras.complementoHorasExtras()) {
+				mayorHorasExtras = empleadoDos;
+			}
+				
+			}
+			
+			System.out.println("El empleado con mayor cobro en horas extras es: "   );
+			System.out.println(mayorHorasExtras.toString());
+			
+			EmpleadoDos menorHorasExtras = empleados.get(0);
+			
+			for (EmpleadoDos empleadoDos : empleados) {
+				if(empleadoDos.complementoHorasExtras()<menorHorasExtras.complementoHorasExtras()) {
+					menorHorasExtras = empleadoDos;
+				}
+					
+				}
+				
+				System.out.println("El empleado con menor cobro en horas extras es: "   );
+				System.out.println(menorHorasExtras.toString());
+				
+				
+				
+				
 
 	}
 

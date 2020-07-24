@@ -6,7 +6,14 @@ public class MainAnimal {
 		Perro dog = new Perro();
 		dog.dormir();
 		dog.sonidoAnimal();
-		dog.come("perro");
+		dog.come(" perro");
+		//dog.camina("perro");
+		Hombre hombre = new Hombre();
+		hombre.come(" hombre");
+		hombre.dormir();
+		hombre.hablar();
+		hombre.sonidoAnimal();
+		
 		
 
 	}

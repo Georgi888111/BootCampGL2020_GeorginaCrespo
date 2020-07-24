@@ -1,6 +1,6 @@
 package com.globallogic.app;
 
-public class EmpleadoDos extends Persona {
+public class EmpleadoDos extends Persona implements Comparable<EmpleadoDos> {
 
 	private int dni;
 	private double sueldoBase;
@@ -108,6 +108,17 @@ public class EmpleadoDos extends Persona {
 		return dni + nombre + "\n Sueldo base: " + sueldoBase + "\n" + "Horas extras: " + cantHorasExtras
 				+ "\n tipo IRPF " + retenciones + "\n Casado: " + esCasado + "\n Numero de hijos: " + numeroHijos;
 
+	}
+
+	@Override
+	public int compareTo(EmpleadoDos o) {
+		if(this.sueldoBruto()< o.sueldoBruto()) {
+			return -1;
+		}
+		if(this.sueldoBruto()> o.sueldoBruto()) {
+			return 1;
+		}
+		return 0;
 	}
 
 }
