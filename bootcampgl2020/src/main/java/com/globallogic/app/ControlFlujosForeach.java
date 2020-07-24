@@ -36,11 +36,12 @@ public class ControlFlujosForeach {
 		
 		//Ejercicio 4.11
 		
-		//String palabra = "BootCamp 2020";
+		String palabra = "BootCamp 2020";
+		char[] caracteres = palabra.toCharArray();
 		
-		//for (Char letra : palabra) {
-			
-		//}
+		for (Character letra : caracteres) {
+			System.out.println("Letra: " +letra);
+		}
 	}
 	
 

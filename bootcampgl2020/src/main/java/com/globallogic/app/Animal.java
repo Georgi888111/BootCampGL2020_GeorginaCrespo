@@ -9,7 +9,7 @@ public interface Animal {
 	System.out.println("El" + s + " se alimenta");	
 	}
 	
-	public static void camina(String s) {
+	static void camina(String s) {
 		System.out.println("El" + s + " camina");
 	}
 		
